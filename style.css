@@ -1,0 +1,99 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #008c9e;
+}
+
+.ball {
+  margin: 40px auto;
+  width: 250px;
+  height: 250px;
+  background: black;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #00bcd4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.4s ease;
+}
+
+.answer {
+  width: 180px;
+  height: 180px;
+  background-color: #222;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.4s ease;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.shake {
+  animation: shake 0.8s ease;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+h3 {
+  margin-top: 40px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  text-align: left;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 14px;
+}
